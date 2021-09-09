@@ -1,6 +1,4 @@
-import React from 'react';
-
-interface Props {
+export interface Props {
   success: boolean;
 }
 export default function Congrats({ success }: Props): JSX.Element | null {

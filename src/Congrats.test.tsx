@@ -1,10 +1,6 @@
 import { shallow, ShallowWrapper } from 'enzyme';
-import Congrats from './Congrats';
+import Congrats, { Props } from './Congrats';
 import { findByTestAttr } from '../test/testUtils';
-
-interface Props {
-  success: boolean;
-}
 
 const setup = (props: Props): ShallowWrapper => {
   return shallow(<Congrats {...props} />);
